@@ -43,6 +43,7 @@ export default function FileUpload({ onUploadSuccess, onUploadError, disabled = 
         onUploadError(result.message || 'Upload failed');
       }
     } catch (error) {
+      console.error('Error uploading file:', error);
       onUploadError('Network error occurred during upload');
     } finally {
       setUploading(false);

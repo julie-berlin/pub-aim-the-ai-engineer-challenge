@@ -4,11 +4,8 @@ import numpy as np
 from typing import List, Tuple, Dict, Any
 import asyncio
 
-# Add the aimakerspace library to the path
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', 'aimakerspace'))
-
-from vectordatabase import VectorDatabase
-from openai_utils.embedding import EmbeddingModel
+from aimakerspace.vectordatabase import VectorDatabase
+from aimakerspace.openai_utils.embedding import EmbeddingModel
 
 
 class DocumentVectorStore:

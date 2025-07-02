@@ -3,10 +3,7 @@ import os
 from typing import List, Dict, Any, AsyncGenerator
 from openai import OpenAI
 
-# Add the aimakerspace library to the path
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'aimakerspace'))
-
-from openai_utils.chatmodel import ChatOpenAI
+from aimakerspace.openai_utils.chatmodel import ChatOpenAI
 from utils.vector_store import vector_store
 
 

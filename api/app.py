@@ -10,10 +10,10 @@ import os
 from typing import Optional
 
 # Import our new models and services
-from models.chat import ChatRequest, RagChatRequest
-from models.document import DocumentList, DocumentDelete, UploadResponse
-from services.pdf_service import pdf_service
-from services.rag_service import rag_service
+from .models.chat import ChatRequest, RagChatRequest
+from .models.document import DocumentList, DocumentDelete, UploadResponse
+from .services.pdf_service import pdf_service
+from .services.rag_service import rag_service
 
 # Initialize FastAPI application with a title
 app = FastAPI(title="OpenAI Chat API with PDF RAG")

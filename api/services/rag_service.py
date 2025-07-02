@@ -11,9 +11,8 @@ class RAGService:
         self.chat_model = None
 
     def _initialize_chat_model(self, api_key: str, model: str = "gpt-4o-mini"):
-        """Initialize chat model with API key"""
-        os.environ["OPENAI_API_KEY"] = api_key
-        self.chat_model = ChatOpenAI(model_name=model)
+        """Initialize chat model with API key from the request"""
+        self.chat_model = ChatOpenAI(api_key=api_key, model_name=model)
 
     def _build_rag_prompt(self, user_message: str, context_chunks: List[Dict[str, Any]]) -> str:
         """Build RAG prompt with context"""

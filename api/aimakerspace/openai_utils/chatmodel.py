@@ -6,11 +6,9 @@ load_dotenv()
 
 
 class ChatOpenAI:
-    def __init__(self, model_name: str = "gpt-4o-mini"):
+    def __init__(self, api_key: str, model_name: str = "gpt-4o-mini"):
         self.model_name = model_name
-        self.openai_api_key = os.getenv("OPENAI_API_KEY")
-        if self.openai_api_key is None:
-            raise ValueError("OPENAI_API_KEY is not set")
+        self.openai_api_key = api_key
 
     def run(self, messages, text_only: bool = True, **kwargs):
         if not isinstance(messages, list):
@@ -25,11 +23,11 @@ class ChatOpenAI:
             return response.choices[0].message.content
 
         return response
-    
+
     async def astream(self, messages, **kwargs):
         if not isinstance(messages, list):
             raise ValueError("messages must be a list")
-        
+
         client = AsyncOpenAI()
 
         stream = await client.chat.completions.create(

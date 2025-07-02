@@ -193,3 +193,5 @@ NEXT_PUBLIC_API_URL=http://localhost:8000
 ---
 
 **Note**: This feature significantly enhances the application's capabilities by adding document-based AI interactions while maintaining backward compatibility with the existing chat functionality.
+
+I'll read this someday!

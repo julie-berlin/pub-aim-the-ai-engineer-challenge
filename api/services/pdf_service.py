@@ -6,7 +6,7 @@ from datetime import datetime
 import tempfile
 
 from api.aimakerspace.text_utils import PDFLoader, CharacterTextSplitter
-from utils.vector_store import vector_store
+from api.utils.vector_store import vector_store
 
 
 class PDFService:

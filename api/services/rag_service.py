@@ -4,8 +4,7 @@ from typing import List, Dict, Any, AsyncGenerator
 from openai import OpenAI
 
 from api.aimakerspace.openai_utils.chatmodel import ChatOpenAI
-from utils.vector_store import vector_store
-
+from api.utils.vector_store import vector_store
 
 class RAGService:
     def __init__(self):

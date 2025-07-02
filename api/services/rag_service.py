@@ -3,7 +3,7 @@ import os
 from typing import List, Dict, Any, AsyncGenerator
 from openai import OpenAI
 
-from aimakerspace.openai_utils.chatmodel import ChatOpenAI
+from api.aimakerspace.openai_utils.chatmodel import ChatOpenAI
 from utils.vector_store import vector_store
 
 

@@ -4,9 +4,8 @@ import numpy as np
 from typing import List, Tuple, Dict, Any
 import asyncio
 
-from aimakerspace.vectordatabase import VectorDatabase
-from aimakerspace.openai_utils.embedding import EmbeddingModel
-
+from api.aimakerspace.vectordatabase import VectorDatabase
+from api.aimakerspace.openai_utils.embedding import EmbeddingModel
 
 class DocumentVectorStore:
     def __init__(self):

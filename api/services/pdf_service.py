@@ -5,7 +5,7 @@ from typing import List, Dict, Any
 from datetime import datetime
 import tempfile
 
-from aimakerspace.text_utils import PDFLoader, CharacterTextSplitter
+from api.aimakerspace.text_utils import PDFLoader, CharacterTextSplitter
 from utils.vector_store import vector_store
 
 

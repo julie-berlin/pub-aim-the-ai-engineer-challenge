@@ -5,10 +5,7 @@ from typing import List, Dict, Any
 from datetime import datetime
 import tempfile
 
-# Add the aimakerspace library to the path
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', '..', '..', 'aimakerspace'))
-
-from text_utils import PDFLoader, CharacterTextSplitter
+from aimakerspace.text_utils import PDFLoader, CharacterTextSplitter
 from utils.vector_store import vector_store
 
 

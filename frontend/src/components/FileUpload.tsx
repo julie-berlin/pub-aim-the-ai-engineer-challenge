@@ -7,7 +7,7 @@ interface FileUploadProps {
   disabled?: boolean;
 }
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || '';
 
 export default function FileUpload({ onUploadSuccess, onUploadError, disabled = false }: FileUploadProps) {
   const [isDragOver, setIsDragOver] = useState(false);
